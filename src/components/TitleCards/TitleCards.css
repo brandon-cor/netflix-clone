@@ -1,0 +1,70 @@
+.title-cards {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.title-cards h2 {
+    margin-bottom: 8px;
+}
+
+/* Container for card list and scroll button */
+.card-list-container {
+    position: relative;
+}
+
+/* Prevents the cards from staying in a straight line and makes the list scrollable */
+.card-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Adjusts the image of each title card */
+.card-list img {
+    width: 240px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Adjusts the positions of the cards */
+.card-list .card {
+    position: relative;
+}
+
+/* Adjusts the position of the titles on the cards */
+.card-list .card p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Scroll button styles */
+.scroll-right-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 60px;
+    /* Adjust width to match the design */
+    height: 100%;
+    /* Full height to cover the card-list vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    /* Creates a gradient fading out to the left */
+}
+
+.scroll-right-button:hover {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    /* Darker gradient on hover */
+}
